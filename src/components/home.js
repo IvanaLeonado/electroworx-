@@ -43,6 +43,7 @@ class Home extends Component {
           <center>
             <h1>Hello!</h1>
             <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+            <a href="/page2Components"> <button name="btn" className="btn btn-success btn-lg">Page 2</button></a>
             <button name="btnsignout" className="btn btn-danger btn-lg" onClick={this.signoutClick}>Sign Out</button>
           </center>
         </div>

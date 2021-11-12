@@ -1,6 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+//import './App.css';
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Page2 from './components/page2Component.js';
+import Login from './components/login.js';
+import Home from './components/home.js';
+import Signup from './components/signup.js';
 
 class App extends Component {
   constructor(){
@@ -13,26 +17,17 @@ class App extends Component {
   }
 
   render() {
-    return (
+    return (    
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          <br/>
-          <button onClick={this.nextPage}>To Page2 Button</button>
-          <br/>
-          <a href="/page2">To Page 2 Link</a>
-        </header>
+        <Router>
+          <div>
+            <Route exact path='/' component={Login} />
+            <Route path='/page2Components' component={Page2} />
+            <Route path='/login' component={Login} />
+            <Route path='/signup' component={Signup} />
+            <Route path='/home' component={Home} />
+          </div>
+        </Router>
       </div>
     );
   }
