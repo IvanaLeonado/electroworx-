@@ -55,7 +55,7 @@ class Signup extends Component {
                     <input type="password" className="form-control" name="confirm_password" id="confirm_password" placeholder="Confirm Password" required="required"/>
                 </div>        
                 <div className="form-group">
-                    <input type="submit" className="btn btn-primary btn-lg" name="btnsignup" id="btnsignup" value="Sign Up"/>
+                    <input type="submit" className="btn btn-outline-light btn-lg" name="btnsignup" id="btnsignup" value="Sign Up"/>
                 </div>
             </form>
             <div className="hint-text">Already have an account? <a href="/login">Sign in here</a></div>

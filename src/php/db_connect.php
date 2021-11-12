@@ -5,7 +5,7 @@
     $host = "localhost";    // Host name
     $user = "root";         // User
     $password = "";         // Password
-    $dbname = "sample";     // Database name
+    $dbname = "electroworx_services";     // Database name
 
     // Create connection
     $con = mysqli_connect($host, $user, $password,$dbname);
