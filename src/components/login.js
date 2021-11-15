@@ -24,8 +24,7 @@ class Login extends Component {
             var res = JSON.parse(this.responseText);
             if(res["status"] === 200){
                 $('#signinForm')[0].reset();
-                window.location.replace('/home'); //replaces the current location
-                //window.location = '../public/home.php'; //navigates to another location
+                window.location.replace('/home');
             }else{
                 alert(res["message"]);
             }

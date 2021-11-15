@@ -17,8 +17,7 @@ class Home extends Component {
         if(this.readyState === 4 && this.status === 200){
             var res = JSON.parse(this.responseText);
             if(res["status"] === 200){
-                window.location.replace('/login'); //replaces the current location
-                //window.location = '../public/index.php'; //navigates to another location
+                window.location.replace('/login');
             }
         }
     };
