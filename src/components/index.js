@@ -4,7 +4,6 @@ import styles from '../css/styles.module.css';
 class Index extends Component {
   constructor(){
     super();
-    
   }
 
   render() {

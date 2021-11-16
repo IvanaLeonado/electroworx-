@@ -36,8 +36,7 @@ class Signup extends Component {
     return (
         <div className="signup-form">
             <form id="signupForm" method="post" onSubmit={this.signupSubmit}>
-                <h2>Sign Up</h2>
-                <p>Please fill in this form to create an account!</p>
+                <h1>REGISTER</h1>
                 <hr/>
                 <div className="form-group">
                     <div className="row">
@@ -55,7 +54,7 @@ class Signup extends Component {
                     <input type="password" className="form-control" name="confirm_password" id="confirm_password" placeholder="Confirm Password" required="required"/>
                 </div>        
                 <div className="form-group">
-                    <input type="submit" className="btn btn-outline-light btn-lg" name="btnsignup" id="btnsignup" value="Sign Up"/>
+                    <input type="submit" className="btn btn-outline-light btn-lg" name="btnsignup" id="btnsignup" value="SIGN UP"/>
                 </div>
             </form>
             <div className="hint-text">Already have an account? <a href="/login">Sign in here</a></div>

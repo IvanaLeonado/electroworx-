@@ -57,11 +57,9 @@ class Login extends Component {
   
   render() {
     return (
-      
       <div className="signup-form">
         <form id="signinForm" method="get" onSubmit={this.signinSubmit}>
-            <h2>Sign In</h2>
-            <p>Please fill in this form to sign in to your account!</p>
+            <h1>LOGIN</h1>
             <hr/>
             <div className="form-group">
                 <input type="email" className="form-control" name="email" id="email" placeholder="Email" required="required" value={this.state.email} onChange={this.valueInputChange('email')}/>
@@ -70,7 +68,7 @@ class Login extends Component {
                 <input type="password" className="form-control" name="password" id="password" placeholder="Password" required="required" value={this.state.password} onChange={this.valueInputChange('password')}/>
             </div>
             <div className="form-group">
-                <input type="submit" name="btnsignin" className="btn btn-outline-light btn-lg" value="Sign In"/>
+                <input type="submit" name="btnsignin" className="btn btn-outline-light btn-lg" value="SIGN IN"/>
             </div>
         </form>
       <div className="hint-text">Don't have an account? <a href="/signup">Sign up here</a></div>

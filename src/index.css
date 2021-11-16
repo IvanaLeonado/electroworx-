@@ -26,7 +26,7 @@ body{
   justify-content: center;
 }
 .form-control{
-  height: 41px;
+  height: 50px;
   background: #f2f2f2;
   box-shadow: 0 0 2px rgb(39,75,105);
   border: none;
@@ -49,7 +49,7 @@ body{
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
   padding: 30px;
 }
-.signup-form h2 {
+.signup-form h1 {
   color: rgb(39,75,105);
   font-weight: bold;
   margin-top: 0;
@@ -69,11 +69,14 @@ body{
 .signup-form .row div:last-child{
   padding-left: 10px;
 }
+.signup-form input{
+  font-size: 20px;
+}
 .signup-form .btn{        
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   border: none;
-  min-width: 140px;
+  min-width: 160px;
   border-radius: 10px;
   box-shadow: 0 0 2px rgb(39,75,105);
 }
