@@ -24,6 +24,10 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 .form-control{
   height: 50px;
@@ -53,6 +57,7 @@ body{
   color: rgb(39,75,105);
   font-weight: bold;
   margin-top: 0;
+  padding-bottom: 10px;
 }
 .signup-form hr {
   margin: 0 -30px 20px;
@@ -94,12 +99,36 @@ body{
 }
 .signup-form form a{
   text-decoration: none;
+  color:rgb(39,75,105);
+  outline: none;
 }	
 .signup-form form a:hover{
   text-decoration: underline;
+  color:rgb(39,75,105);
+
 }
 .signup-form .hint-text {
   padding-bottom: 15px;
   text-align: center;
 }
+.react-icons {
+  vertical-align: middle;
+  fill: rgb(39,75,105);
+  margin-left: 35%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.index :hover{
+  color:rgb(39,75,105);
+  transition-duration: 0.3s;
+}
 
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}

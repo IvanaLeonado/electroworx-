@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import $ from "jquery";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import '../css/fontawesome';
 
 class Login extends Component {
   constructor(){
@@ -10,8 +12,10 @@ class Login extends Component {
       email : '',
       password : ''
     }
+    
   }
 
+  
   signinSubmit(e){
     var xhttp = new XMLHttpRequest();
     var url = "http://localhost/electroworxservices/src/php/signin_action.php";
@@ -59,7 +63,11 @@ class Login extends Component {
     return (
       <div className="signup-form">
         <form id="signinForm" method="get" onSubmit={this.signinSubmit}>
-            <h1>LOGIN</h1>
+            
+            <div className="row">
+                <h1 className="col-xs-6">LOGIN</h1>
+                <a href="/index" className="react-icons"><FontAwesomeIcon icon={['fa', 'circle-xmark']} size="3x" fixedWidth/></a>
+            </div>
             <hr/>
             <div className="form-group">
                 <input type="email" className="form-control" name="email" id="email" placeholder="Email" required="required" value={this.state.email} onChange={this.valueInputChange('email')}/>
